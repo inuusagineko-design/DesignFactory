@@ -31,7 +31,12 @@ Thumbs.db
 
 # Project-specific
 _works/*.bak
-.claude/notes/*.bak
+
+# Claude Code settings (local only, not for collaboration)
+.claude/
 
 # Backups (not tracked in Git)
 backups/
+
+# Sensitive files
+_works/GitHub_Token.txt
