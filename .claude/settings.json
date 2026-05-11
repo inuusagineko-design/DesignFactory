@@ -11,8 +11,10 @@
     ]
   },
   "git": {
-    "enabled": false,
-    "require_confirmation": false
+    "enabled": true,
+    "require_confirmation": true,
+    "remote": "origin",
+    "repository": "https://github.com/inuusagineko-design/DesignFactory.git"
   },
   "bashCommands": {
     "allowed": [
