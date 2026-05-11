@@ -32,3 +32,6 @@ Thumbs.db
 # Project-specific
 _works/*.bak
 .claude/notes/*.bak
+
+# Backups (not tracked in Git)
+backups/
