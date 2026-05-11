@@ -1,0 +1,34 @@
+# Environment
+.env
+.env.local
+*.local.json
+
+# IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+*.log
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Project-specific
+_works/*.bak
+.claude/notes/*.bak

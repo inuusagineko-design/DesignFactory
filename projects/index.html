@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Portfolio</title>
+    <meta name="description" content="判断ログ・思考プロセス・検証経緯を公開した企画ディレクション事例集。なぜこの構成にしたかを説明します。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1466b8', 'primary-dark': '#0d4f8a',
+                        'accent': '#e65100', 'accent-dark': '#bf4400',
+                        'secondary': '#10b981', 'secondary-dark': '#059669',
+                        'tertiary': '#8b5cf6', 'tertiary-dark': '#7c3aed',
+                        'background-light': '#f7f6f2',
+                        'text-main': '#1a1a1a', 'text-sub': '#5a5a5a',
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'sans-serif'],
+                        'display': ['Poppins', 'Noto Sans JP', 'sans-serif']
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body class="text-text-main">
+
+<header class="sticky top-0 z-50 bg-gray-100 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-8 lg:px-16">
+        <nav class="flex items-center justify-between h-16">
+            <a href="/" class="font-display text-xl font-bold text-text-main">Portfolio</a>
+            <div class="hidden md:flex items-center gap-4">
+                <a href="/projects/" data-slug="projects" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">Projects</a>
+                <a href="/works/" data-slug="works" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">Works</a>
+                <a href="/gallery/" data-slug="gallery" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">Gallery</a>
+                <a href="/report/" data-slug="report" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">Report</a>
+                <a href="/about/" data-slug="about" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">About</a>
+                <a href="/contact/" class="btn-3d-primary text-white px-5 py-2 rounded-lg text-sm font-bold">お問い合わせ</a>
+            </div>
+            <button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-200">
+                <span class="material-symbols-outlined" id="mobile-menu-icon">menu</span>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-200">
+            <div class="flex flex-col gap-2 pt-4">
+                <a href="/projects/" data-slug="projects" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">Projects</a>
+                <a href="/works/" data-slug="works" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">Works</a>
+                <a href="/gallery/" data-slug="gallery" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">Gallery</a>
+                <a href="/report/" data-slug="report" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">Report</a>
+                <a href="/about/" data-slug="about" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">About</a>
+                <a href="/contact/" class="btn-3d-primary text-white px-5 py-2 rounded-lg text-sm font-bold text-center mt-2">お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="bg-background-light">
+
+    <!-- ========== ページヘッダー ========== -->
+    <section class="bg-white py-10 lg:py-8 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16">
+            <div class="max-w-3xl">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="inline-block w-2 h-2 bg-primary rounded-full"></span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-text-sub">Projects</span>
+                </div>
+                <h1 class="font-display text-4xl lg:text-5xl font-bold mb-6">企画ディレクション</h1>
+                <p class="text-text-sub text-lg leading-relaxed">
+                    判断ログ・思考プロセス・検証などの経緯は、<br>
+                    存在する。なぜこの構成にしたかは説明できる必要があります。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 判断ログ形式の企画一覧 ========== -->
+    <section class="py-10 lg:py-8">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16">
+
+            <!-- 企画1: 金属加工工場 -->
+            <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden mb-12">
+                <div class="grid lg:grid-cols-5">
+                    <div class="aspect-video lg:aspect-auto lg:col-span-2 relative overflow-hidden">
+                        <img src="/images/projects/metal-factory2.jpg" alt="金属加工工場" class="w-full h-full object-cover img-top-crop">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-white/90 text-text-main text-xs font-bold px-3 py-1 rounded-full">多言語サイト</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 p-8 lg:p-10">
+                        <h2 class="text-2xl font-bold mb-6">金属加工工場・多言語サイト</h2>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">案件条件</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>業種：精密板金加工</li>
+                                    <li>制約：既存写真の品質が低い</li>
+                                    <li>ゴール：海外からの引き合い獲得</li>
+                                    <li>NG：過度な技術用語</li>
+                                </ul>
+                            </div>
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">初期仮説</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>想定ユーザー：海外バイヤー</li>
+                                    <li>競合：大手は英語サイト完備</li>
+                                    <li>訴求軸：技術力 × 対応力</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">検討案</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>案A：技術スペック全面押し</li>
+                                    <li>案B：事例ギャラリー中心</li>
+                                    <li>案C：問い合わせ導線重視</li>
+                                </ul>
+                            </div>
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">却下理由</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>案A：専門用語が多すぎる</li>
+                                    <li>案B：写真品質が追いつかない</li>
+                                    <li>→ 案Cをベースに再構成</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2 mb-6">
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">WordPress</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">多言語</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">製造業</span>
+                        </div>
+                        <a href="https://note.com/koita669/n/n880ffc0f96af" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-text-main px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                            noteで企画意図を読む
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 企画2: エコキュート補助金LP -->
+            <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden mb-12">
+                <div class="grid lg:grid-cols-5">
+                    <div class="aspect-video lg:aspect-auto lg:col-span-2 relative overflow-hidden">
+                        <img src="/images/projects/eco-cute2.jpg" alt="エコキュート補助金LP" class="w-full h-full object-cover img-top-crop">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-white/90 text-text-main text-xs font-bold px-3 py-1 rounded-full">LP制作</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 p-8 lg:p-10">
+                        <h2 class="text-2xl font-bold mb-6">エコキュート補助金LP</h2>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">案件条件</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>業種：住宅設備販売</li>
+                                    <li>制約：補助金制度の複雑さ</li>
+                                    <li>ゴール：問い合わせ獲得</li>
+                                    <li>NG：誇大表現</li>
+                                </ul>
+                            </div>
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">初期仮説</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>想定ユーザー：持ち家の50代以上</li>
+                                    <li>競合：価格訴求が多い</li>
+                                    <li>訴求軸：安心感 × 手続き代行</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">検討案</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>案A：補助金額を大きく表示</li>
+                                    <li>案B：手続きの簡単さを強調</li>
+                                    <li>案C：事例・お客様の声中心</li>
+                                </ul>
+                            </div>
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">却下理由</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>案A：制度変更リスク</li>
+                                    <li>案C：事例が少ない段階</li>
+                                    <li>→ 案Bで信頼感を構築</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2 mb-6">
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">LP</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">コンバージョン最適化</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">住宅設備</span>
+                        </div>
+                        <a href="https://note.com/koita669/n/n91d6de59e759" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-text-main px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                            noteで企画意図を読む
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 企画3: 座標グリッド検索 -->
+            <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden mb-12">
+                <div class="grid lg:grid-cols-5">
+                    <div class="aspect-video lg:aspect-auto lg:col-span-2 relative overflow-hidden">
+                        <img src="/images/projects/mapsc2.jpg" alt="座標グリッド検索" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-white/90 text-text-main text-xs font-bold px-3 py-1 rounded-full">個人開発</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 p-8 lg:p-10">
+                        <h2 class="text-2xl font-bold mb-6">座標グリッド検索システム</h2>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">開発背景</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>目的：全国の業種別データ収集</li>
+                                    <li>制約：APIの60件上限 / Type不一致</li>
+                                    <li>ゴール：漏れのない全国網羅</li>
+                                    <li>NG：手作業での繰り返し検索</li>
+                                </ul>
+                            </div>
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">初期仮説</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>問題：密集地域で取得漏れが発生</li>
+                                    <li>原因：検索半径が大きすぎる</li>
+                                    <li>解決軸：地域密度に応じた分割検索</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">検討案</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>案A：駅名ベースで半径指定</li>
+                                    <li>案B：都道府県単位で一括検索</li>
+                                    <li>案C：座標グリッドで動的分割</li>
+                                </ul>
+                            </div>
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">却下理由</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>案A：起点間の空白地帯が発生</li>
+                                    <li>案B：県境付近で取りこぼし</li>
+                                    <li>→ 案C：密度別グリッドで全国カバー</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2 mb-6">
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">Python</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">Google Places API</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">Flask</span>
+                        </div>
+                        <a href="https://qiita.com/koita5959-ux/items/d75bd9120905f601b046" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-text-main px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                            Qiitaで技術記事を読む
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 企画4: 近くの板金工場 -->
+            <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden mb-12">
+                <div class="grid lg:grid-cols-5">
+                    <div class="aspect-video lg:aspect-auto lg:col-span-2 relative overflow-hidden">
+                        <img src="/images/projects/bankin001.jpg" alt="近くの板金工場" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-white/90 text-text-main text-xs font-bold px-3 py-1 rounded-full">Webアプリ</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 p-8 lg:p-10">
+                        <h2 class="text-2xl font-bold mb-6">「近くの板金工場」</h2>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">案件条件</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>業種：自動車板金（一人親方）</li>
+                                    <li>制約：親方はIT関心が薄い</li>
+                                    <li>ゴール：困った消費者と町工場を繋ぐ</li>
+                                    <li>NG：大手ポータルとの正面対決</li>
+                                </ul>
+                            </div>
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">初期仮説</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>想定ユーザー：車をぶつけた個人</li>
+                                    <li>競合：比較サイト・口コミサイト</li>
+                                    <li>訴求軸：近さ × シンプルさ</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">検討案</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>案A：口コミ比較型プラットフォーム</li>
+                                    <li>案B：組合加盟店の一覧マップ</li>
+                                    <li>案C：地図検索に特化したシンプルUI</li>
+                                </ul>
+                            </div>
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">却下理由</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>案A：大手と同じ土俵になる</li>
+                                    <li>案B：組合データだけでは網羅不足</li>
+                                    <li>→ 案C：繋ぐだけに徹する設計</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2 mb-6">
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">Webアプリ</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">地図連携</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">製造業</span>
+                        </div>
+                        <a href="https://note.com/koita669/n/ncdd435cc7216" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-text-main px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                            noteで企画意図を読む
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 企画5: 陶磁器工房 -->
+            <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden mb-12">
+                <div class="grid lg:grid-cols-5">
+                    <div class="aspect-video lg:aspect-auto lg:col-span-2 relative overflow-hidden">
+                        <img src="/images/projects/pottery-studio.jpg" alt="陶磁器工房" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-white/90 text-text-main text-xs font-bold px-3 py-1 rounded-full">多言語サイト</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 p-8 lg:p-10">
+                        <h2 class="text-2xl font-bold mb-6">陶磁器工房・多言語サイト</h2>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">案件条件</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>業種：伝統工芸</li>
+                                    <li>制約：作家の発信への抵抗感</li>
+                                    <li>ゴール：海外コレクターへの訴求</li>
+                                    <li>NG：安売り感・量産イメージ</li>
+                                </ul>
+                            </div>
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">初期仮説</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>想定ユーザー：美術・工芸愛好家</li>
+                                    <li>競合：情報量が少ないサイトが多い</li>
+                                    <li>訴求軸：作家の世界観 × 技法解説</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">検討案</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>案A：ECサイト型（購入導線重視）</li>
+                                    <li>案B：ギャラリー型（写真のみ）</li>
+                                    <li>案C：ストーリー型（世界観＋問合せ）</li>
+                                </ul>
+                            </div>
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">却下理由</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>案A：安売り感が出る</li>
+                                    <li>案B：テキスト不足で伝わらない</li>
+                                    <li>→ 案C：多言語で世界観を届ける</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2 mb-6">
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">WordPress</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">多言語</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">アート・工芸</span>
+                        </div>
+                        <a href="https://note.com/koita669/n/nbf7df46e2bba" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-text-main px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                            noteで企画意図を読む
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 企画6: スマホサイト制作奮闘記 -->
+            <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden">
+                <div class="grid lg:grid-cols-5">
+                    <div class="aspect-video lg:aspect-auto lg:col-span-2 relative overflow-hidden">
+                        <img src="/images/projects/clearancesale.JPG" alt="スマホサイト制作奮闘記" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-white/90 text-text-main text-xs font-bold px-3 py-1 rounded-full">スマホLP</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 p-8 lg:p-10">
+                        <h2 class="text-2xl font-bold mb-6">スマホサイト制作奮闘記</h2>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">案件条件</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>種別：ディスカウントストアのセールLP</li>
+                                    <li>制約：スマホ縦スクロール前提</li>
+                                    <li>ゴール：チラシ的密度感の実現</li>
+                                    <li>NG：スカスカ・単調な構成</li>
+                                </ul>
+                            </div>
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">初期仮説</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>想定ユーザー：セール情報を探す消費者</li>
+                                    <li>課題：Web特有の余白が密度感を殺す</li>
+                                    <li>解決軸：紙チラシの設計思想をWebに</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">検討案</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>案A：商品一覧グリッド型</li>
+                                    <li>案B：全セクション同一デザイン</li>
+                                    <li>案C：セクション毎にメリハリ＋画像活用</li>
+                                </ul>
+                            </div>
+                            <div class="bg-background-light rounded-xl p-5">
+                                <h3 class="font-bold text-sm text-primary mb-3">却下理由</h3>
+                                <ul class="text-text-sub text-sm space-y-1">
+                                    <li>案A：味気ない一覧になる</li>
+                                    <li>案B：スクロールで飽きる</li>
+                                    <li>→ 案C：Gifアニメ＋アコーディオンで緩急</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2 mb-6">
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">スマホLP</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">Gifアニメ</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded text-xs font-medium">アコーディオン</span>
+                        </div>
+                        <a href="https://note.com/koita669/n/n943a0ceb6799" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-text-main px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                            noteで制作プロセスを読む
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ========== 判断ログ形式の説明 ========== -->
+    <section class="py-10 lg:py-8 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16">
+            <div class="grid lg:grid-cols-2 gap-4 items-center">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full"></span>
+                        <span class="text-xs font-bold uppercase tracking-widest text-text-sub">Why Log?</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6">なぜ検証でその経緯などが必要なのか</h2>
+                    <p class="text-text-sub leading-relaxed mb-6">
+                        条件を整理し、仮説を立て、検証する。
+                        その経緯を残すことで、判断の根拠が明確になります。
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                            <span class="text-text-sub">条件を整理し、仮説を立てる</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                            <span class="text-text-sub">複数案を検討し、却下理由も記録</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                            <span class="text-text-sub">最終構成の根拠を明確にする</span>
+                        </li>
+                    </ul>
+                    <a href="/about/" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                        制作姿勢について
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="bg-background-light rounded-2xl p-8">
+                    <h3 class="font-bold text-lg mb-6">判断ログのテンプレート</h3>
+                    <div class="space-y-4 text-sm">
+                        <div class="bg-white rounded-lg p-4 border border-gray-100">
+                            <p class="font-bold text-primary mb-1">案件条件</p>
+                            <p class="text-text-sub">業種 / 制約 / ゴール / NG事項</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 border border-gray-100">
+                            <p class="font-bold text-primary mb-1">初期仮説</p>
+                            <p class="text-text-sub">想定ユーザー / 競合の雰囲気 / 訴求軸</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 border border-gray-100">
+                            <p class="font-bold text-primary mb-1">検討案 → 却下理由</p>
+                            <p class="text-text-sub">案A / 案B / 案C / なぜ採用しなかったか</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 border border-gray-100">
+                            <p class="font-bold text-primary mb-1">最終構成</p>
+                            <p class="text-text-sub">ヒーロー / CTA / 画像方針 / コピー温度</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="pt-10 lg:pt-8 pb-20 bg-primary">
+        <div class="max-w-3xl mx-auto px-8 lg:px-16 text-center text-white">
+            <h2 class="text-3xl font-bold mb-6">それが企画趣旨につながるものでは？</h2>
+            <p class="text-white/80 text-lg mb-8">
+                ニーズ・目的などをお聞かせいただければ<br>
+                少しでもお役に立てる解答をお出しします
+            </p>
+            <a href="/contact/" class="btn-3d-accent text-white px-8 py-4 rounded-lg font-bold inline-flex items-center gap-2">
+                <span class="material-symbols-outlined">mail</span>
+                お問い合わせ
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-gray-900 text-white py-10">
+    <div class="max-w-7xl mx-auto px-8 lg:px-16">
+        <div class="grid md:grid-cols-4 gap-4 mb-8">
+            <div class="md:col-span-2">
+                <p class="font-display text-xl font-bold mb-4">Portfolio</p>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    何を作るべきか、一緒に考えます。<br>
+                    目的から設計し、AIとともに形にする。
+                </p>
+            </div>
+            <div>
+                <p class="font-bold mb-4 text-sm">Pages</p>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="/projects/" class="hover:text-white transition-colors">Projects</a></li>
+                    <li><a href="/works/" class="hover:text-white transition-colors">Works</a></li>
+                    <li><a href="/gallery/" class="hover:text-white transition-colors">Gallery</a></li>
+                    <li><a href="/report/" class="hover:text-white transition-colors">Report</a></li>
+                    <li><a href="/about/" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="/contact/" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="font-bold mb-4 text-sm">Links</p>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="https://qiita.com/koita5959-ux" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Qiita</a></li>
+                    <li><a href="https://note.com/koita669" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">note</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-500 text-sm">&copy; <span id="copyright-year">2026</span> Portfolio. All rights reserved.</p>
+            <p class="text-gray-600 text-xs">Built in collaboration with Claude AI</p>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/site.js"></script>
+</body>
+</html>

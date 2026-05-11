@@ -1,0 +1,36 @@
+{
+  "description": "Design Factory - Cloudflare移行・個人事業サイト",
+  "permissions": {
+    "allowed": [
+      "read_files",
+      "edit_html",
+      "edit_css",
+      "edit_json",
+      "bash_basic",
+      "git_basic"
+    ]
+  },
+  "git": {
+    "enabled": false,
+    "require_confirmation": false
+  },
+  "bashCommands": {
+    "allowed": [
+      "ls",
+      "grep",
+      "cat",
+      "find"
+    ],
+    "require_confirmation": false
+  },
+  "tools": {
+    "read_only": [
+      "bash",
+      "read"
+    ]
+  },
+  "defaults": {
+    "model": "claude-haiku-4-5-20251001",
+    "line_length": 100
+  }
+}

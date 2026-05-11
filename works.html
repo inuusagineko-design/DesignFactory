@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works | Portfolio</title>
+    <meta name="description" content="グラフィック・Web・コーディング・ツール開発まで。15年以上の制作経験でお応えします。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1466b8', 'primary-dark': '#0d4f8a',
+                        'accent': '#e65100', 'accent-dark': '#bf4400',
+                        'secondary': '#10b981', 'secondary-dark': '#059669',
+                        'tertiary': '#8b5cf6', 'tertiary-dark': '#7c3aed',
+                        'background-light': '#f7f6f2',
+                        'text-main': '#1a1a1a', 'text-sub': '#5a5a5a',
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'sans-serif'],
+                        'display': ['Poppins', 'Noto Sans JP', 'sans-serif']
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="text-text-main">
+
+<header class="sticky top-0 z-50 bg-gray-100 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-8 lg:px-16">
+        <nav class="flex items-center justify-between h-16">
+            <a href="index.html" class="font-display text-xl font-bold text-text-main">Portfolio</a>
+            <div class="hidden md:flex items-center gap-4">
+                <a href="projects.html" data-slug="projects" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">Projects</a>
+                <a href="works.html" data-slug="works" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">Works</a>
+                <a href="gallery.html" data-slug="gallery" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">Gallery</a>
+                <a href="report.html" data-slug="report" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">Report</a>
+                <a href="about.html" data-slug="about" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">About</a>
+                <a href="contact.html" class="btn-3d-primary text-white px-5 py-2 rounded-lg text-sm font-bold">お問い合わせ</a>
+            </div>
+            <button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-200">
+                <span class="material-symbols-outlined" id="mobile-menu-icon">menu</span>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-200">
+            <div class="flex flex-col gap-2 pt-4">
+                <a href="projects.html" data-slug="projects" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">Projects</a>
+                <a href="works.html" data-slug="works" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">Works</a>
+                <a href="gallery.html" data-slug="gallery" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">Gallery</a>
+                <a href="report.html" data-slug="report" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">Report</a>
+                <a href="about.html" data-slug="about" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">About</a>
+                <a href="contact.html" class="btn-3d-primary text-white px-5 py-2 rounded-lg text-sm font-bold text-center mt-2">お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="bg-background-light">
+
+    <!-- ========== ページヘッダー ========== -->
+    <section class="bg-white py-10 lg:py-8 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16">
+            <div class="max-w-3xl">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="inline-block w-2 h-2 bg-primary rounded-full"></span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-text-sub">Works</span>
+                </div>
+                <h1 class="font-display text-4xl lg:text-5xl font-bold mb-6">デザインワーク</h1>
+                <p class="text-text-sub text-lg leading-relaxed">
+                    制作物・ビジュアル・成果物。<br>
+                    グラフィックからWeb、コーディングまで。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== カテゴリセクション ========== -->
+    <section class="py-10 lg:py-8">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+                <a href="gallery.html#graphic-design" class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-lg hover:border-accent/30 transition-all group">
+                    <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                        <span class="material-symbols-outlined text-accent text-3xl">brush</span>
+                    </div>
+                    <h2 class="text-xl font-bold mb-3">Graphic Design</h2>
+                    <p class="text-text-sub text-sm leading-relaxed mb-4">
+                        チラシ、パンフレット、名刺、ロゴなど。紙媒体を中心としたデザイン制作。
+                    </p>
+                    <div class="flex items-center gap-2 text-accent font-bold text-sm">
+                        <span>作品を見る</span>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </a>
+                <a href="gallery.html#web-design" class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-lg hover:border-primary/30 transition-all group">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <span class="material-symbols-outlined text-primary text-3xl">web</span>
+                    </div>
+                    <h2 class="text-xl font-bold mb-3">Web Design</h2>
+                    <p class="text-text-sub text-sm leading-relaxed mb-4">
+                        Webサイトのデザイン、ワイヤーフレーム、UIデザイン。WordPress構築も対応。
+                    </p>
+                    <div class="flex items-center gap-2 text-primary font-bold text-sm">
+                        <span>作品を見る</span>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </a>
+                <a href="gallery.html#coding" class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-lg hover:border-secondary/30 transition-all group">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
+                        <span class="material-symbols-outlined text-secondary text-3xl">code</span>
+                    </div>
+                    <h2 class="text-xl font-bold mb-3">Coding</h2>
+                    <p class="text-text-sub text-sm leading-relaxed mb-4">
+                        HTML/CSS/JavaScriptによるフロントエンド実装。レスポンシブ対応。
+                    </p>
+                    <div class="flex items-center gap-2 text-secondary font-bold text-sm">
+                        <span>作品を見る</span>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </a>
+                <a href="gallery.html#tool-development" class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-lg hover:border-tertiary/30 transition-all group">
+                    <div class="w-16 h-16 bg-tertiary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-tertiary/20 transition-colors">
+                        <span class="material-symbols-outlined text-tertiary text-3xl">build</span>
+                    </div>
+                    <h2 class="text-xl font-bold mb-3">Tool Development</h2>
+                    <p class="text-text-sub text-sm leading-relaxed mb-4">
+                        Pythonによる業務効率化ツール、スクレイピング、データ処理の自動化。
+                    </p>
+                    <div class="flex items-center gap-2 text-tertiary font-bold text-sm">
+                        <span>作品を見る</span>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== スキルセクション ========== -->
+    <section class="py-10 lg:py-8 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16">
+            <div class="text-center mb-12">
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <span class="inline-block w-2 h-2 bg-primary rounded-full"></span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-text-sub">Skills</span>
+                </div>
+                <h2 class="text-3xl font-bold">使用ツール・技術</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div>
+                    <h3 class="font-bold mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">palette</span>
+                        Design
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Illustrator</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Photoshop</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Figma</span>
+                        <div class="w-full"></div>
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Canva</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">code</span>
+                        Development
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">HTML/CSS</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">JavaScript</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">WordPress</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Python</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">smart_toy</span>
+                        AI Tools
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Claude</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">ChatGPT</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Midjourney</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium">Stitch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 経験年数 ========== -->
+    <section class="pt-10 lg:pt-8 pb-20 bg-background-light">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16">
+            <div class="grid md:grid-cols-2 gap-4 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">15年以上の制作経験</h2>
+                    <p class="text-text-sub leading-relaxed mb-6">
+                        グラフィックデザインからスタートし、Webデザイン、コーディング、
+                        そして現在はAIを活用した制作まで。時代の変化とともに、
+                        常に新しい技術を取り入れながら制作を続けてきました。
+                    </p>
+                    <p class="text-text-sub leading-relaxed">
+                        特化したスペシャリストより、時代に敏感なWeb仕事に関わっていく。
+                        それが私のスタンスです。
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white rounded-xl p-6 text-center border border-gray-100">
+                        <p class="font-display text-4xl font-bold text-primary mb-2">15+</p>
+                        <p class="text-text-sub text-sm">年の経験</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 text-center border border-gray-100">
+                        <p class="font-display text-4xl font-bold text-primary mb-2">8000+</p>
+                        <p class="text-text-sub text-sm">制作実績</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 text-center border border-gray-100">
+                        <p class="font-display text-4xl font-bold text-primary mb-2">4</p>
+                        <p class="text-text-sub text-sm">カテゴリ</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 text-center border border-gray-100">
+                        <p class="font-display text-4xl font-bold text-primary mb-2">2</p>
+                        <p class="text-text-sub text-sm">軸で設計</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-gray-900 text-white py-10">
+    <div class="max-w-7xl mx-auto px-8 lg:px-16">
+        <div class="grid md:grid-cols-4 gap-4 mb-8">
+            <div class="md:col-span-2">
+                <p class="font-display text-xl font-bold mb-4">Portfolio</p>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    何を作るべきか、一緒に考えます。<br>
+                    目的から設計し、AIとともに形にする。
+                </p>
+            </div>
+            <div>
+                <p class="font-bold mb-4 text-sm">Pages</p>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="projects.html" class="hover:text-white transition-colors">Projects</a></li>
+                    <li><a href="works.html" class="hover:text-white transition-colors">Works</a></li>
+                    <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+                    <li><a href="report.html" class="hover:text-white transition-colors">Report</a></li>
+                    <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="font-bold mb-4 text-sm">Links</p>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="https://qiita.com/koita5959-ux" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Qiita</a></li>
+                    <li><a href="https://note.com/koita669" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">note</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-500 text-sm">&copy; <span id="copyright-year">2026</span> Portfolio. All rights reserved.</p>
+            <p class="text-gray-600 text-xs">Built in collaboration with Claude AI</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

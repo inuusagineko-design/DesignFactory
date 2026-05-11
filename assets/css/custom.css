@@ -1,0 +1,87 @@
+/* ============================================================
+   N Portfolio - カスタムCSS
+   ============================================================ */
+
+/* --- ベース --- */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.font-display {
+    font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+}
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* --- 3Dボタン：Primary --- */
+.btn-3d-primary {
+    background: linear-gradient(to bottom, #1a7fd4 0%, #1466b8 50%, #0d4f8a 100%);
+    border-bottom: 4px solid #0a3d6b;
+    box-shadow: 0 4px 6px rgba(20, 102, 184, 0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+    transition: all 0.15s ease;
+}
+.btn-3d-primary:hover {
+    border-bottom-width: 2px;
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(20, 102, 184, 0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+}
+.btn-3d-primary:active {
+    border-bottom-width: 1px;
+    transform: translateY(3px);
+    box-shadow: 0 1px 2px rgba(20, 102, 184, 0.3);
+}
+
+/* --- 3Dボタン：Accent --- */
+.btn-3d-accent {
+    background: linear-gradient(to bottom, #ff6d1a 0%, #e65100 50%, #bf4400 100%);
+    border-bottom: 4px solid #8f3300;
+    box-shadow: 0 4px 6px rgba(230, 81, 0, 0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+    transition: all 0.15s ease;
+}
+.btn-3d-accent:hover {
+    border-bottom-width: 2px;
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(230, 81, 0, 0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+}
+.btn-3d-accent:active {
+    border-bottom-width: 1px;
+    transform: translateY(3px);
+    box-shadow: 0 1px 2px rgba(230, 81, 0, 0.3);
+}
+
+/* --- 3Dボタン：Secondary --- */
+.btn-3d-secondary {
+    background: linear-gradient(to bottom, #34d399 0%, #10b981 50%, #059669 100%);
+    border-bottom: 4px solid #047857;
+    box-shadow: 0 4px 6px rgba(16, 185, 129, 0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+    transition: all 0.15s ease;
+}
+.btn-3d-secondary:hover {
+    border-bottom-width: 2px;
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+/* --- ヒーロー（index用） --- */
+.hero-gradient {
+    background: linear-gradient(135deg, #f7f6f2 0%, #eae8e3 100%);
+}
+
+/* --- ギャラリー（gallery用） --- */
+.gallery-item {
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+.gallery-item img {
+    transition: opacity 0.3s ease;
+}
+
+/* --- Projects用メディアクエリ --- */
+@media (max-width: 1000px) {
+    .img-top-crop {
+        object-position: top;
+    }
+}
