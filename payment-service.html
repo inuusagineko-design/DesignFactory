@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment service | Portfolio</title>
+    <meta name="description" content="お急ぎのお客様向けに、決済導線を整理したPayment serviceページです。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1466b8', 'primary-dark': '#0d4f8a',
+                        'accent': '#e65100', 'accent-dark': '#bf4400',
+                        'secondary': '#10b981', 'secondary-dark': '#059669',
+                        'tertiary': '#8b5cf6', 'tertiary-dark': '#7c3aed',
+                        'background-light': '#f7f6f2',
+                        'text-main': '#1a1a1a', 'text-sub': '#5a5a5a'
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'sans-serif'],
+                        'display': ['Poppins', 'Noto Sans JP', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="text-text-main bg-white">
+
+<header class="sticky top-0 z-50 bg-gray-100 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-8 lg:px-16">
+        <nav class="flex items-center justify-between h-16">
+            <a href="index.html" class="font-display text-xl font-bold text-text-main">Design Factory</a>
+            <div class="hidden md:flex items-center gap-4">
+                <a href="index.html" data-slug="home" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">HOME</a>
+                <a href="projects.html" data-slug="projects" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">Projects</a>
+                <a href="works.html" data-slug="works" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">Works</a>
+                <a href="gallery.html" data-slug="gallery" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">Gallery</a>
+                <a href="report.html" data-slug="report" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">Report</a>
+                <a href="about.html" data-slug="about" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">About</a>
+                <a href="https://demosrv1.skr.jp/DesignFactory/contact.html" data-slug="contact" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium">お問い合わせ</a>
+            </div>
+            <button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-200">
+                <span class="material-symbols-outlined" id="mobile-menu-icon">menu</span>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-200">
+            <div class="flex flex-col gap-2 pt-4">
+                <a href="index.html" data-slug="home" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">HOME</a>
+                <a href="projects.html" data-slug="projects" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">Projects</a>
+                <a href="works.html" data-slug="works" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">Works</a>
+                <a href="gallery.html" data-slug="gallery" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">Gallery</a>
+                <a href="report.html" data-slug="report" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">Report</a>
+                <a href="about.html" data-slug="about" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">About</a>
+                <a href="https://demosrv1.skr.jp/DesignFactory/contact.html" data-slug="contact" class="nav-link text-text-sub hover:text-primary transition-colors text-sm font-medium py-2">お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="bg-white">
+    <section class="py-8 lg:py-10">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+            <p class="text-center text-sm sm:text-base mb-8">
+                <span class="payment-reference-link font-medium">決済ページ参考 URL：</span>
+                <a href="https://meovoltec.media-house.jp/option/" target="_blank" rel="noopener noreferrer" class="payment-reference-link underline decoration-red-300 underline-offset-4 break-all">https://meovoltec.media-house.jp/option/</a>
+            </p>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="inline-block w-2 h-2 bg-primary rounded-full"></span>
+                    <span class="text-sm text-text-sub">Payment service</span>
+                </div>
+                <h1 class="font-display text-4xl sm:text-5xl font-bold tracking-tight mb-6">お急ぎのお客様のための決済サービス</h1>
+                <div class="text-lg leading-loose text-text-main space-y-2 max-w-3xl">
+                    <p>UI/UXの企画提案や既存サイトのトップページの見直しをはじめ、お問い合わせいただいたお客様には、基本パッケージとして3種類の料金形態をご用意しています。</p>
+                    <p>この決済の趣旨は、お急ぎの対応を目的とした決済システムの事例をご紹介しています。詳しくはお問い合わせフォームからお問い合わせをいただき、詳しい資料をご紹介させていただいています。</p>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto mt-10">
+                <a href="contact.html" class="block text-center border border-gray-300 rounded-2xl px-6 py-5 text-2xl font-bold hover:border-primary hover:text-primary transition-colors bg-white shadow-sm">
+                    お問い合わせメールフォームへ
+                </a>
+            </div>
+
+            <div class="max-w-5xl mx-auto mt-10 grid lg:grid-cols-[0.95fr_1.05fr] gap-10 items-start">
+                <section>
+                    <div class="flex items-end justify-between mb-5">
+                        <h2 class="text-3xl font-bold">営業品目事例</h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="service-chip rounded-2xl px-6 py-4 text-center text-2xl font-bold">WEB デザイン</div>
+                        <div class="service-chip rounded-2xl px-6 py-4 text-center text-2xl font-bold">UI/UX 企画</div>
+                        <div class="service-chip rounded-2xl px-6 py-4 text-center text-2xl font-bold">グラフィックデザイン</div>
+                        <div class="service-chip rounded-2xl px-6 py-4 text-center text-2xl font-bold">Web アプリ開発</div>
+                        <div class="service-chip rounded-2xl px-6 py-4 text-center text-2xl font-bold">C# プログラミング</div>
+                        <div class="service-chip rounded-2xl px-6 py-4 text-center text-2xl font-bold">スクレイピングアプリ</div>
+                        <div class="service-chip rounded-2xl px-6 py-4 text-center text-2xl font-bold">SEO/MEO 戦略</div>
+                        <div class="service-chip rounded-2xl px-6 py-4 text-center text-2xl font-bold">LP・ショートサイト</div>
+                        <div class="service-chip rounded-2xl px-6 py-4 text-center text-2xl font-bold">EC サイト企画制作</div>
+                        <div class="service-chip rounded-2xl px-6 py-4 text-center text-2xl font-bold">RPA Tool/APP</div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="flex items-end justify-between gap-4 mb-3">
+                        <h2 class="text-3xl font-bold">お急ぎ決済</h2>
+                    </div>
+                    <p class="text-sm text-text-sub mb-5">事前のお打ち合わせを終えたお客様に、お急ぎ案件に対応するための決済です。</p>
+
+                    <form id="payment-service-form" class="payment-card rounded-3xl p-5 sm:p-7">
+                        <div class="space-y-5">
+                            <div>
+                                <label for="amount" class="block text-sm font-bold mb-2">金額（税込みお支払額）</label>
+                                <input id="amount" name="amount" type="text" inputmode="numeric" required class="payment-field" placeholder="30,000">
+                            </div>
+                            <div>
+                                <label for="company-name" class="block text-sm font-bold mb-2">会社名 / お名前</label>
+                                <input id="company-name" name="name" type="text" required class="payment-field" placeholder="株式会社○○ / 山田 太郎">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-bold mb-2">メールアドレス</label>
+                                <input id="email" name="email" type="email" required class="payment-field" placeholder="example@mail.com">
+                            </div>
+
+                            <fieldset>
+                                <legend class="block text-sm font-bold mb-3">お支払い方法</legend>
+                                <div class="space-y-3">
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment_method" value="card" required>
+                                        <div class="payment-option-body">
+                                            <p class="font-bold text-xl">カードで支払う</p>
+                                            <div class="payment-logo-row">
+                                                <span class="payment-logo-badge text-blue-700">VISA</span>
+                                                <span class="payment-logo-badge text-red-500">Master</span>
+                                                <span class="payment-logo-badge text-green-700">JCB</span>
+                                                <span class="payment-logo-badge text-sky-600">AMEX</span>
+                                                <span class="payment-logo-badge text-indigo-700">Diners</span>
+                                            </div>
+                                        </div>
+                                        <span class="payment-option-radio" aria-hidden="true"></span>
+                                    </label>
+
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment_method" value="paypay" required>
+                                        <div class="payment-option-body">
+                                            <p class="font-bold text-xl">PayPay で支払う</p>
+                                            <div class="payment-logo-row">
+                                                <span class="payment-logo-badge paypay">PayPay</span>
+                                            </div>
+                                        </div>
+                                        <span class="payment-option-radio" aria-hidden="true"></span>
+                                    </label>
+
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment_method" value="google-pay" required>
+                                        <div class="payment-option-body">
+                                            <p class="font-bold text-xl">Google Pay で支払う</p>
+                                            <div class="payment-logo-row">
+                                                <span class="payment-logo-badge gpay">G Pay</span>
+                                            </div>
+                                        </div>
+                                        <span class="payment-option-radio" aria-hidden="true"></span>
+                                    </label>
+
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment_method" value="paypal" required>
+                                        <div class="payment-option-body">
+                                            <p class="font-bold text-xl">PayPal で支払う</p>
+                                            <div class="payment-logo-row">
+                                                <span class="payment-logo-badge paypal">PayPal</span>
+                                            </div>
+                                        </div>
+                                        <span class="payment-option-radio" aria-hidden="true"></span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <button type="submit" id="payment-submit" disabled class="payment-cta-disabled w-full text-white rounded-xl py-4 text-lg font-bold transition-all disabled:cursor-not-allowed">
+                                支払いに進む
+                            </button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-gray-900 text-white py-10">
+    <div class="max-w-7xl mx-auto px-8 lg:px-16">
+        <div class="grid md:grid-cols-4 gap-4 mb-8">
+            <div class="md:col-span-2">
+                <p class="font-display text-xl font-bold leading-tight">デザインファクトリー</p>
+                <p class="font-display text-sm font-medium text-gray-300 mb-3">西村典泰</p>
+                <p class="text-gray-400 text-xs mb-1">〒502-0932 岐阜県岐阜市則武中2-14-11</p>
+                <p class="text-gray-400 text-xs mb-2">TEL: 080-522-92618</p>
+                <p class="mb-2"><img src="images/mail-address.png" alt="メールアドレス" class="h-5"></p>
+                <p class="mb-3"><a href="tokushoho.html" class="text-gray-400 text-xs hover:text-white transition-colors">特定商取引法に基づく表記</a></p>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    何を作るべきか、一緒に考えます。<br>
+                    目的から設計し、AIとともに形にする。
+                </p>
+            </div>
+            <div>
+                <p class="font-bold mb-4 text-sm">Pages</p>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="projects.html" class="hover:text-white transition-colors">Projects</a></li>
+                    <li><a href="works.html" class="hover:text-white transition-colors">Works</a></li>
+                    <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+                    <li><a href="report.html" class="hover:text-white transition-colors">Report</a></li>
+                    <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="font-bold mb-4 text-sm">Inquiry</p>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    <li><a href="payment-service.html" class="hover:text-white transition-colors">Payment service</a></li>
+                    <li><a href="tokushoho.html" class="hover:text-white transition-colors">特定商取引法に基づく表記</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-500 text-sm">&copy; <span id="copyright-year">2026</span> デザインファクトリー西村典泰. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script>
+    (function() {
+        var form = document.getElementById('payment-service-form');
+        var submit = document.getElementById('payment-submit');
+        var requiredFields = form.querySelectorAll('input[required]');
+        var destination = 'https://meovoltec.media-house.jp/option/';
+
+        function checkForm() {
+            var valid = true;
+            var selectedMethod = form.querySelector('input[name="payment_method"]:checked');
+
+            requiredFields.forEach(function(field) {
+                if (field.type === 'radio') return;
+                if (field.value.trim() === '') valid = false;
+            });
+
+            form.querySelectorAll('.payment-option').forEach(function(option) {
+                var radio = option.querySelector('input[type="radio"]');
+                option.classList.toggle('is-selected', !!(radio && radio.checked));
+            });
+
+            if (!selectedMethod) {
+                valid = false;
+            }
+
+            submit.disabled = !valid;
+            submit.classList.toggle('btn-3d-primary', valid);
+            submit.classList.toggle('payment-cta-disabled', !valid);
+        }
+
+        form.addEventListener('input', checkForm);
+        form.addEventListener('change', checkForm);
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            if (submit.disabled) return;
+            window.location.href = destination;
+        });
+
+        checkForm();
+    })();
+</script>
+</body>
+</html>

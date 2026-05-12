@@ -85,3 +85,125 @@ body {
         object-position: top;
     }
 }
+
+/* --- Payment service page --- */
+.payment-reference-link {
+    color: #b91c1c;
+}
+
+.service-chip {
+    background: linear-gradient(180deg, #f6efe0 0%, #f3ebdb 100%);
+    border: 1px solid #d6d0c5;
+    box-shadow: 0 2px 0 rgba(140, 133, 120, 0.35);
+}
+
+.payment-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.payment-field {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.9rem;
+    padding: 0.95rem 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.payment-field:focus {
+    outline: none;
+    border-color: #1466b8;
+    box-shadow: 0 0 0 4px rgba(20, 102, 184, 0.12);
+}
+
+.payment-option {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 1.1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.payment-option:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    transform: translateY(-1px);
+}
+
+.payment-option input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.payment-option-radio {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #d1d5db;
+    border-radius: 9999px;
+    margin-left: auto;
+    flex-shrink: 0;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.payment-option input:checked + .payment-option-body + .payment-option-radio,
+.payment-option.is-selected .payment-option-radio {
+    border-color: #1466b8;
+    box-shadow: inset 0 0 0 5px #1466b8;
+}
+
+.payment-option input:checked + .payment-option-body,
+.payment-option.is-selected .payment-option-body {
+    color: #0f172a;
+}
+
+.payment-option:has(input:checked),
+.payment-option.is-selected {
+    border-color: #1466b8;
+    box-shadow: 0 12px 28px rgba(20, 102, 184, 0.12);
+}
+
+.payment-logo-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 0.7rem;
+}
+
+.payment-logo-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    height: 1.8rem;
+    padding: 0 0.45rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.45rem;
+    background: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.payment-logo-badge.paypay {
+    color: #e60033;
+}
+
+.payment-logo-badge.gpay {
+    color: #1f2937;
+}
+
+.payment-logo-badge.paypal {
+    color: #003087;
+}
+
+.payment-cta-disabled {
+    background: #cbd5e1;
+    border-bottom: 4px solid #94a3b8;
+    box-shadow: none;
+}
