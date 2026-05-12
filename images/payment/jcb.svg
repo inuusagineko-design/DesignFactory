@@ -1,0 +1,17 @@
+<svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="80" rx="4" fill="white"/>
+  <rect x="0.5" y="0.5" width="119" height="79" rx="3.5" stroke="#ddd"/>
+  <path d="M100.9 58.8C100.9 65.8 95.2 71.5 88.2 71.5H19.1V21.2C19.1 14.2 24.8 8.5 31.8 8.5H100.9V58.8Z" fill="white"/>
+  <path d="M83.05 12.75C78.05 12.75 73.95 16.8 73.95 21.85V31.3H86.8C87.1 31.3 87.45 31.3 87.7 31.35C90.6 31.5 92.75 33 92.75 35.6C92.75 37.65 91.3 39.4 88.6 39.75V39.85C91.55 40.05 93.8 41.7 93.8 44.25C93.8 47 91.3 48.8 88 48.8H73.9V67.3H87.25C92.25 67.3 96.35 63.25 96.35 58.2V12.75H83.05Z" fill="url(#jcb_g1)"/>
+  <path d="M78.4 45.9H83.65C83.8 45.9 84.15 45.85 84.3 45.85C85.3 45.65 86.15 44.75 86.15 43.5C86.15 42.3 85.3 41.4 84.3 41.15C84.15 41.1 83.85 41.1 83.65 41.1H78.4V45.9Z" fill="url(#jcb_g2)"/>
+  <path d="M85.5 36.2C85.5 35 84.65 34.2 83.65 34.05C83.55 34.05 83.3 34 83.15 34H78.4V38.4H83.15C83.3 38.4 83.6 38.4 83.65 38.35C84.65 38.2 85.5 37.4 85.5 36.2Z" fill="url(#jcb_g3)"/>
+  <path d="M57.9 12.75C52.9 12.75 48.8 16.8 48.8 21.85V33.75C51.1 31.8 55.1 30.55 61.55 30.85C65 31 68.7 31.95 68.7 31.95V35.8C66.85 34.85 64.65 34 61.8 33.8C56.9 33.45 53.95 35.85 53.95 40.05C53.95 44.3 56.9 46.7 61.8 46.3C64.65 46.1 66.85 45.2 68.7 44.3V48.15C68.7 48.15 65.05 49.1 61.55 49.25C55.1 49.55 51.1 48.3 48.8 46.35V67.35H62.15C67.15 67.35 71.25 63.3 71.25 58.25V12.75H57.9Z" fill="url(#jcb_g4)"/>
+  <path d="M32.75 12.75C27.75 12.75 23.65 16.8 23.65 21.85V44.3C26.2 45.55 28.85 46.35 31.5 46.35C34.65 46.35 36.35 44.45 36.35 41.85V31.25H44.15V41.8C44.15 45.9 41.6 49.25 32.95 49.25C27.7 49.25 23.6 48.1 23.6 48.1V67.25H36.95C41.95 67.25 46.05 63.2 46.05 58.15V12.75H32.75Z" fill="url(#jcb_g5)"/>
+  <defs>
+    <linearGradient id="jcb_g1" x1="73.94" y1="40" x2="96.41" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#007940"/><stop offset="1" stop-color="#5CB531"/></linearGradient>
+    <linearGradient id="jcb_g2" x1="73.94" y1="43.5" x2="96.41" y2="43.5" gradientUnits="userSpaceOnUse"><stop stop-color="#007940"/><stop offset="1" stop-color="#5CB531"/></linearGradient>
+    <linearGradient id="jcb_g3" x1="73.94" y1="36.2" x2="96.41" y2="36.2" gradientUnits="userSpaceOnUse"><stop stop-color="#007940"/><stop offset="1" stop-color="#5CB531"/></linearGradient>
+    <linearGradient id="jcb_g4" x1="48.67" y1="40" x2="70.83" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#6C2C2F"/><stop offset="1" stop-color="#006FBC"/></linearGradient>
+    <linearGradient id="jcb_g5" x1="23.64" y1="40" x2="46.46" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#1F286F"/><stop offset="1" stop-color="#006FBC"/></linearGradient>
+  </defs>
+</svg>

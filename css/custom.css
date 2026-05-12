@@ -87,10 +87,6 @@ body {
 }
 
 /* --- Payment service page --- */
-.payment-reference-link {
-    color: #b91c1c;
-}
-
 .service-chip {
     background: linear-gradient(180deg, #f6efe0 0%, #f3ebdb 100%);
     border: 1px solid #d6d0c5;
@@ -190,16 +186,14 @@ body {
     letter-spacing: 0.01em;
 }
 
-.payment-logo-badge.paypay {
-    color: #e60033;
+.payment-logo-asset {
+    height: 1.8rem;
+    width: auto;
+    display: block;
 }
 
-.payment-logo-badge.gpay {
-    color: #1f2937;
-}
-
-.payment-logo-badge.paypal {
-    color: #003087;
+.payment-logo-asset--wide {
+    height: 2rem;
 }
 
 .payment-cta-disabled {
