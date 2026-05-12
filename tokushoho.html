@@ -102,9 +102,81 @@
         }
         dd img { height: 20px; margin-bottom: 0.375rem; display: block; }
 
+        /* フッター */
+        .site-footer {
+            background: #111827;
+            color: #fff;
+            padding: 2.5rem 0;
+        }
+        .site-footer-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .site-footer-grid {
+            display: grid;
+            grid-template-columns: 1.8fr 0.8fr 0.7fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .site-footer-title {
+            font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        .site-footer-subtitle {
+            font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #d1d5db;
+            margin-bottom: 0.75rem;
+        }
+        .site-footer-text-xs {
+            font-size: 0.75rem;
+            color: #9ca3af;
+            margin-bottom: 0.25rem;
+        }
+        .site-footer-copy {
+            font-size: 0.875rem;
+            color: #9ca3af;
+            line-height: 1.8;
+            margin-top: 0.75rem;
+        }
+        .site-footer-heading {
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .site-footer-list {
+            list-style: none;
+        }
+        .site-footer-list li + li {
+            margin-top: 0.5rem;
+        }
+        .site-footer-list a {
+            font-size: 0.875rem;
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .site-footer-list a:hover {
+            color: #fff;
+        }
+        .site-footer-bottom {
+            border-top: 1px solid #1f2937;
+            padding-top: 1rem;
+            text-align: center;
+        }
+        .site-footer-bottom p {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
         @media (max-width: 600px) {
             .row { grid-template-columns: 1fr; gap: 0.25rem; }
             nav { display: none; }
+            .site-footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
         }
     </style>
 </head>
@@ -182,6 +254,53 @@
         </div>
     </dl>
 </main>
+
+<footer class="site-footer">
+    <div class="site-footer-inner">
+        <div class="site-footer-grid">
+            <div>
+                <p class="site-footer-title">デザインファクトリー</p>
+                <p class="site-footer-subtitle">西村典泰</p>
+                <p class="site-footer-text-xs">〒502-0932 岐阜県岐阜市則武中2-14-11</p>
+                <p class="site-footer-text-xs">TEL: 080-522-92618</p>
+                <p style="margin: 0.5rem 0;"><img src="images/mail-address.png" alt="メールアドレス" style="height: 20px; display: block;"></p>
+                <p class="site-footer-copy">
+                    何を作るべきか、一緒に考えます。<br>
+                    目的から設計し、AIとともに形にする。
+                </p>
+            </div>
+            <div>
+                <p class="site-footer-heading">Pages</p>
+                <ul class="site-footer-list">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="site-footer-heading">Links</p>
+                <ul class="site-footer-list">
+                    <li><a href="https://qiita.com/koita5959-ux" target="_blank" rel="noopener noreferrer">Qiita</a></li>
+                    <li><a href="https://note.com/koita669" target="_blank" rel="noopener noreferrer">note</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="site-footer-heading">Inquiry</p>
+                <ul class="site-footer-list">
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="payment-service.html">Payment service</a></li>
+                    <li><a href="tokushoho.html">特定商取引法に基づく表記</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-footer-bottom">
+            <p>&copy; 2026 デザインファクトリー西村典泰. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
